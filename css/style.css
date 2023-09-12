@@ -1,27 +1,29 @@
-body{
-
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#frame{
-    border:crimson ;
-overflow: hidden;
-
-
-
-
+#frame {
+  border: 1px chartreuse solid;
+  overflow: hidden;
+ 
 }
-#frame img{
-transition: all.0.3;
-vertical-align: bottom;
+#frame img {
+  transition: all 0.3;
+  vertical-align: bottom;
+ 
+
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
 }
 #frame img:hover {
-transform: scale(125%);
-
-
+  transform: scale(125%);
+  filter: blur(60px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
 
 }
